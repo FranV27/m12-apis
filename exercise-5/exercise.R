@@ -5,12 +5,16 @@ library(httr)
 
 # Write a function that allows you to specify a movie, that does the following:
 GetReview <- function(movie) {
+   
   
   # Construct a search query using YOUR api key
   # The base URL is https://api.nytimes.com/svc/movies/v2/reviews/search.json?
   # Your parameters should include a "query" and an "api_key"
   # Note: the HTTR library will take care of spaces in the arguments
   # See the interactive console for more detail:https://developer.nytimes.com/movie_reviews_v2.json#/Console/GET/reviews/search.json
+  base.url <- 'https://api.nytimes.com/svc/movies/v2/reviews/search.json?'
+  api.key <- '0ebef82750bf49f7bab45c84cb155766'
+  
   
   
   # Request data using your search query
